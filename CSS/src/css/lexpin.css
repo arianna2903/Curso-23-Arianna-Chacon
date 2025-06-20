@@ -23,7 +23,6 @@ nav {
   padding: 20px; 0; 20px; 0 sentido de las agujas del reloj*/
   /*Radio de los bordes, se lee arriba izquiera, abajo derecha
   abajo izquierda, abajo derecha*/
-  border-radius: 0 0 15px 15px;
 } 
 /*
 nav div selecciona todos los divs dentro de nav
@@ -36,7 +35,7 @@ nav div {
 }
 
 nav div a {
-  margin: 0, 20 px;
+  margin: 0 20 px;
 }
 
 /*Las pseudoclases manejan el estado de un elemento
@@ -51,12 +50,74 @@ nav div a {
 nav div a:visited, nav div a:link {
 color: white;
 text-decoration: none;
+transition: 1s;
 }
 /*
 #inicio :hover, #introduccion :hover {
 color: #000000;
 }
 */
-.enlace :hover {
+.enlace:hover {
   color: black;
+}
+
+main {
+  background-color: black;
+  background-image: linear-gradient(to right, #2c5097,  );
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/*Grid es un elemento que nos permite crear varias filas y columnas al mismo tiempo*/
+
+header {
+  height: 80vh;
+  min-height: 80vh;
+  background-color: aqua;
+  background-image: url("https://img.freepik.com/premium-photo/soft-blue-green-foil-glass-texture-background-abstract-gradient-bright-light-reflection-shiny-ro_694006-4413.jpg?w=1380");
+  background-size: cover;
+  /*opacity: 0.1;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 25px;
+  /*grid-template-rows: 200px;*/
+  /*eje principal*/
+  justify-items: center;
+  /*eje secundario*/
+  align-content: center;
+  gap: 20px;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+} 
+
+/*ANIMACION*/
+.gradient-background {
+  background: linear-gradient(291deg,#2c5097,#0055ff,#ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
