@@ -1,0 +1,31 @@
+/*Importacion */
+/*Mixins
+ * Los mixins son funciones que se pueden reutilizar en el codigo.
+ * En palabras simples, son fragmentos de codigo que se pueden reutilizar
+ * en diferentes partes del proyecto. */
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0;
+}
+nav div {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}/*# sourceMappingURL=styles.css.map */
