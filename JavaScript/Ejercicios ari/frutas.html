@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let frutas = ["cambur", "piña", "platano", "lechoza", "melon", "patilla", "uva", "fresa", "kiwi", "limon", "naranja", "toronja", "ciruela", "pasas", "manzana", "pera"]
+    function mercado(frutas, indice) {
+      if (indice === frutas.length) return; 
+      console.log(frutas[indice])
+      mercado(frutas, indice + 1);
+    }
+    mercado(frutas, 0)
+  </script>
+</body>
+</html>

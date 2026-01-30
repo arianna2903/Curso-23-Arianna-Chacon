@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let meses = Number(prompt("Ingrese un numero del 1 al 12: "))
+    while (meses < 1 || meses > 12 || (isNaN(meses))) {
+      alert("Número inválido. Por favor, intente de nuevo.")
+      meses = Number(prompt("Ingrese un numero del 1 al 12: "))
+    } 
+      const meses2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+      alert("Su mes es: " + meses2[meses - 1])
+  </script>
+</body>
+</html>

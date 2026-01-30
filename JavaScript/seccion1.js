@@ -31,7 +31,7 @@ console.log(objeto); //Imprime {nombre: "Juan", edad: 30}
 console.log(objeto.nombre); //Acceso a una propiedad del objeto, imprime "Juan"
 
 let suma_numeros = 5 + 3; //Suma
-let suma_string = "a10" + "2"; //Resta
+let suma_string = "a10" + "2"; //Concatena
 
 //Practica
 let prueba = "Pedro";
@@ -40,7 +40,7 @@ prueba = [1, 2, 3];
 console.log(prueba);
 
 console.log(prueba[1]); //Imprime 2  
-consolelog (2 + 2);
+console.log (2 + 2);
 
 let estudiante = {
   nombre: "Jose",
@@ -63,8 +63,8 @@ console.log (estudiante.edad);
 
 let suma = 5 + 3; //Suma 8
 let resta = 5 - 3; //Resta 2 
-let multiplicacion = 5 * 3; //Multiplica 15
-let division = 5 / 3; //Division 1.666666666667 
+let multiplicacion = 5 * 3; //Multiplica 15 
+  let division = 5 / 3; //Division 1.666666666667 
 let modulo = 5 % 2; //Modulo (resto de la division) 1
 let exponente = 5 ** 3; //Exponente (5 elevado a la 3) 125 
 

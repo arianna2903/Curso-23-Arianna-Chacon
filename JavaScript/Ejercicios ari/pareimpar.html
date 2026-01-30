@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let condicional = Number(prompt("Ingrese un numero: "))
+    while (isNaN(condicional)) { 
+    alert("Ingrese un numero válido")
+    condicional = Number(prompt("Ingrese un numero: "))
+    } if (condicional !== isNaN) {
+      (condicional % 2)
+    } if (condicional % 2 === 1) {
+      alert("El numero es impar.")
+    } else if (condicional % 2 === 0){
+      alert("El numero es par.")
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let number1= Number(prompt("Ingrese el primer número"))
+    while (isNaN(number1)) { 
+      alert("No es un número válido. Intente de nuevo.")
+      number1= Number(prompt("Ingrese el primer número"))
+    }
+    let number2= Number(prompt("Ingrese el segundo número:"))
+    while (isNaN(number2)) {
+      alert("No es un número válido. Intente de nuevo.")
+      number2= Number(prompt("Ingrese el segundo número:"))
+    }
+    let operador= prompt("Ingrese la operación que desea realizar: Suma, Resta, Multiplicación y División.").toLowerCase();
+    while (operador !== "suma" && operador !== "+" && operador !== "resta" && operador !== "-" 
+    && operador !== "multiplicación" && operador !== "*" && operador!== "división" && operador !== "/") {
+      alert("No es una operación válida. Intente de nuevo.")
+      operador= prompt("Ingrese la operación que desea realizar: Suma, Resta, Multiplicación y División.").toLowerCase();
+    } if (operador === "suma" || operador === "+") {
+      alert("Resultado: " + (number1 + number2));
+    } else if (operador === "resta" || operador === "-") {
+      alert("Resultado: " + (number1 - number2))
+    } else if (operador === "multiplicación" || operador === "*") {
+      alert ("Resultado: " + (number1 * number2))
+    } else if (operador === "división" || operador === "/") {
+      alert ("Resultado: " + (number1 / number2)) 
+    }
+  </script> 
+</body>
+</html>
